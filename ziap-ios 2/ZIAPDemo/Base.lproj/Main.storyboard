@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZIAPDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-bF-r9p" customClass="ZRoundButton" customModule="ZIAPDemo" customModuleProvider="target">
+                                <rect key="frame" x="30" y="34" width="317" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uwc-ke-uJW"/>
+                                </constraints>
+                                <state key="normal" title="Device Compromised">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deviceCompromisedWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="vjm-x4-8NH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFp-Rk-KGQ" customClass="ZRoundButton" customModule="ZIAPDemo" customModuleProvider="target">
+                                <rect key="frame" x="30" y="82" width="317" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="F09-a5-Vwv"/>
+                                </constraints>
+                                <state key="normal" title="MITM">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deviceARPMITMWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="hAw-FK-5az"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US8-Wi-hSR" customClass="ZRoundButton" customModule="ZIAPDemo" customModuleProvider="target">
+                                <rect key="frame" x="30" y="130" width="317" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="thB-TH-g3H"/>
+                                </constraints>
+                                <state key="normal" title="Rogue Access Point">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deviceRogueAccessPointWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="UcJ-AB-gWc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvv-G5-Wi6" customClass="ZRoundButton" customModule="ZIAPDemo" customModuleProvider="target">
+                                <rect key="frame" x="30" y="178" width="317" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7wb-LE-vgq"/>
+                                </constraints>
+                                <state key="normal" title="SSL Strip">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deviceSSLStripWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="JzB-Sb-zBX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1q-yz-B7o" customClass="ZRoundButton" customModule="ZIAPDemo" customModuleProvider="target">
+                                <rect key="frame" x="30" y="226" width="317" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="C41-UW-eyY"/>
+                                    <constraint firstAttribute="height" constant="40" id="seE-ya-CXe"/>
+                                </constraints>
+                                <state key="normal" title="DangerZone">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deviceDangerZoneWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="oFK-Ut-uRQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2i-8B-x1c" customClass="ZRoundButton" customModule="ZIAPDemo" customModuleProvider="target">
+                                <rect key="frame" x="30" y="274" width="317" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Nmw-1n-LzX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="hfz-dc-4V8"/>
+                                </constraints>
+                                <state key="normal" title="Captive Portal">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deviceCaprivePortalWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="T0Y-NZ-681"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J1o-XE-WGt">
+                                <rect key="frame" x="30" y="418" width="317" height="241"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcf-RI-u7A" customClass="ZRoundButton" customModule="ZIAPDemo" customModuleProvider="target">
+                                <rect key="frame" x="30" y="370" width="317" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Lb-wW-LeL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="V2T-z0-hbq"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Check Device Integrity">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="checkDeviceIntegrity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2b-GB-nrt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjK-Jq-0ix" customClass="ZRoundButton" customModule="ZIAPDemo" customModuleProvider="target">
+                                <rect key="frame" x="29" y="322" width="317" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0em-UD-a3W"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="aXn-zj-Esl"/>
+                                </constraints>
+                                <state key="normal" title="Activate">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deviceUnsecuredNetworkWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="03w-cb-1r2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3hh-bF-r9p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="3KG-5Y-HgI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="US8-Wi-hSR" secondAttribute="trailing" constant="12" id="4cG-1x-fJW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J1o-XE-WGt" secondAttribute="bottom" constant="8" id="5SR-fj-NcL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S2i-8B-x1c" secondAttribute="trailing" constant="12" id="5tr-LI-ctg"/>
+                            <constraint firstItem="3hh-bF-r9p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="6hE-f7-u4k"/>
+                            <constraint firstItem="US8-Wi-hSR" firstAttribute="top" secondItem="qFp-Rk-KGQ" secondAttribute="bottom" constant="8" id="7QF-lj-imY"/>
+                            <constraint firstItem="J1o-XE-WGt" firstAttribute="top" secondItem="fcf-RI-u7A" secondAttribute="bottom" constant="8" id="8eP-FX-QqQ"/>
+                            <constraint firstItem="L1q-yz-B7o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="BTJ-Cr-8mq"/>
+                            <constraint firstItem="Wvv-G5-Wi6" firstAttribute="top" secondItem="US8-Wi-hSR" secondAttribute="bottom" constant="8" id="Bpx-8P-6dV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J1o-XE-WGt" secondAttribute="trailing" constant="12" id="Dgs-Qt-xjy"/>
+                            <constraint firstItem="Wvv-G5-Wi6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="GIU-UZ-7yr"/>
+                            <constraint firstItem="J1o-XE-WGt" firstAttribute="top" secondItem="fcf-RI-u7A" secondAttribute="bottom" constant="8" id="I0N-sJ-o4T"/>
+                            <constraint firstItem="fcf-RI-u7A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="IY6-U2-Vil"/>
+                            <constraint firstItem="S2i-8B-x1c" firstAttribute="top" secondItem="L1q-yz-B7o" secondAttribute="bottom" constant="8" id="KNG-w1-XMc"/>
+                            <constraint firstItem="3hh-bF-r9p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="LoT-N8-txA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wvv-G5-Wi6" secondAttribute="trailing" constant="12" id="MuC-bA-Qj6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fcf-RI-u7A" secondAttribute="trailing" constant="12" id="RoD-zt-ewW"/>
+                            <constraint firstItem="L1q-yz-B7o" firstAttribute="top" secondItem="Wvv-G5-Wi6" secondAttribute="bottom" constant="8" id="SkO-Zl-y6j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L1q-yz-B7o" secondAttribute="trailing" constant="12" id="Vgo-GV-ceT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J1o-XE-WGt" secondAttribute="trailing" constant="12" id="W2L-q9-bKj"/>
+                            <constraint firstItem="qFp-Rk-KGQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="WnB-La-9nv"/>
+                            <constraint firstItem="J1o-XE-WGt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="alF-hi-Htg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AjK-Jq-0ix" secondAttribute="trailing" constant="13" id="bbN-LQ-mBI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fcf-RI-u7A" secondAttribute="trailing" constant="12" id="btP-Q4-fkW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fcf-RI-u7A" secondAttribute="trailing" constant="12" id="clQ-xS-LCH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3hh-bF-r9p" secondAttribute="trailing" constant="12" id="i8V-fB-a2D"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J1o-XE-WGt" secondAttribute="bottom" constant="8" id="ifc-Sw-Ycl"/>
+                            <constraint firstItem="S2i-8B-x1c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="jQG-Mf-V2Z"/>
+                            <constraint firstItem="fcf-RI-u7A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="kjM-Y2-o5H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qFp-Rk-KGQ" secondAttribute="trailing" constant="12" id="oid-EG-UyG"/>
+                            <constraint firstItem="fcf-RI-u7A" firstAttribute="top" secondItem="AjK-Jq-0ix" secondAttribute="bottom" constant="8" id="pH5-XO-N8T"/>
+                            <constraint firstItem="qFp-Rk-KGQ" firstAttribute="top" secondItem="3hh-bF-r9p" secondAttribute="bottom" constant="8" id="qZA-UA-HdJ"/>
+                            <constraint firstItem="US8-Wi-hSR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="rKG-Vh-KH4"/>
+                            <constraint firstItem="AjK-Jq-0ix" firstAttribute="top" secondItem="S2i-8B-x1c" secondAttribute="bottom" constant="8" id="rWs-GI-FLi"/>
+                            <constraint firstItem="3hh-bF-r9p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="s5p-oa-Jmj"/>
+                            <constraint firstItem="fcf-RI-u7A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="tAV-ck-q9u"/>
+                            <constraint firstItem="AjK-Jq-0ix" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="tIX-m1-it8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3hh-bF-r9p" secondAttribute="trailing" constant="12" id="uzM-mf-2Ol"/>
+                            <constraint firstItem="J1o-XE-WGt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="xg2-tg-hqf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="statusView" destination="J1o-XE-WGt" id="MQf-0A-MOh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
